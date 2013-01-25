@@ -1,5 +1,7 @@
 package com.example.kcm_stylus_draw;
 
+import com.example.kcm_stylus_draw.service.CommServiceHelper;
+
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
@@ -200,6 +202,7 @@ public class LoginActivity extends Activity {
             // TODO: attempt authentication against a network service.
 
             try {
+            	CommServiceHelper.getInstance().doSomething(LoginActivity.this, "message1", "message2");
                 // Simulate network access.
                 Thread.sleep(2000);
             } catch (InterruptedException e) {
