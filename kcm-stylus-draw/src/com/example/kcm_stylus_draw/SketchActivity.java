@@ -6,7 +6,7 @@ import android.view.View;
 public class SketchActivity extends View {
 
 	public SketchActivity(Context context) {
-		super(context);
+		super(context); //test
 		// TODO Auto-generated constructor stub
 	}
 
